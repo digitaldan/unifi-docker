@@ -23,7 +23,7 @@ RUN echo "deb http://www.ubnt.com/downloads/unifi/debian unifi5 ubiquiti" > \
   debconf-set-selections
 
 RUN apt-get -q update && \
-  apt-get install -qy --force-yes --no-install-recommends unifi && \
+  apt-get install -qy --force-yes --no-install-recommends oracle-java8-installer unifi && \
   apt-get -q clean && \
   rm -rf /var/lib/apt/lists/*
 
